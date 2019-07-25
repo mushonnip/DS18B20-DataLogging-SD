@@ -19,6 +19,8 @@ DallasTemperature sensorSuhu1(&oneWire1);
 DallasTemperature sensorSuhu2(&oneWire2);
 DallasTemperature sensorSuhu3(&oneWire3);
 
+
+
 RTC_DS3231 rtc;
 LiquidCrystal_PCF8574 lcd(0x3F);
 File fileSuhu;
@@ -29,7 +31,7 @@ const unsigned long periode = 60000; //interval waktu menyimpan dalam milidetik
 //const unsigned long periode = 600000; //interval waktu menyimpan dalam milidetik
 
 void setup()
-{
+{u
     Serial.begin(9600);
     //RTC (Real Time Clock)
     if (!rtc.begin())
